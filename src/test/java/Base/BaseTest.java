@@ -26,7 +26,7 @@ public class BaseTest {
             options.addArguments("--kiosk");
             options.addArguments("--disable-notifications");
             options.addArguments("--start-fullscreen");
-            System.setProperty("webdriver.chrome.driver","driver/chromedrive");
+            System.setProperty("webdriver.chrome.driver","driver/chromedriver");
             driver=new ChromeDriver(options);
             wait=new WebDriverWait(driver,30);
             driver.get("https://www.hepsiburada.com");
